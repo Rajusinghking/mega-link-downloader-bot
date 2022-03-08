@@ -34,7 +34,7 @@ RUN mkdir -p /tmp/ && \
     rm ./megacmd-xUbuntu_20.04_amd64.deb
 
 # Installing megatools
-RUN mkdir -p /tmp/ && cd /tmp/ && git clone https://github.com/XMYSTERlOUSX/megatools && cd /tmp/megatools && meson b && ninja -C b && ninja -C b install
+RUN mkdir -p /tmp/ && cd /tmp/ && git clone https://github.com/Rajusinghking/megatools && cd /tmp/megatools && meson b && ninja -C b && ninja -C b install
 
 # Copying the content of the local src directory to the working directory
 COPY . .
